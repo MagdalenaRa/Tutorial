@@ -53,7 +53,6 @@ li {
 }
 
 .link {
-  font-family: "Roboto", sans-serif;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   position: relative;
@@ -66,7 +65,6 @@ li {
 }
 
 .logo-bottom {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 129%;
@@ -74,11 +72,6 @@ li {
   text-transform: uppercase;
   text-align: center;
   color: #ae1332;
-}
-
-.product-photo {
-  width: 335px;
-  height: 172px;
 }
 
 .social-media-set {
@@ -98,8 +91,8 @@ li {
   border: 1px solid #ae1332;
   border-radius: 10px;
   padding: 8px;
-  width: 44px;
-  height: 44px;
+  width: 160px;
+  height: 40px;
 }
 
 .footer-address {
@@ -125,6 +118,7 @@ li {
   letter-spacing: -0.02em;
   text-align: center;
   color: #ae1332;
+  padding-bottom: 80px;
 }
 
 .footer-contact {
@@ -153,20 +147,98 @@ li {
   fill: #ae1332;
 }
 
+.left-footer {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .footer-phone {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    color: #ae1332;
+  }
+
+  .maps-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #ae1332;
   }
 
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    column-gap: 24px;
-    row-gap: 72px;
     align-items: baseline;
+    max-width: 768px;
   }
 
   .footer-navigation {
+    padding-top: 80px;
+  }
+
+  .footer-icon-box {
+    width: 44px;
+    height: 44px;
+  }
+
+  .footer-set {
+    display: inline-block;
+    margin-left: 171px;
+    margin-top: 32px;
+  }
+
+  .left-footer {
+    margin: 0;
+  }
+}
+
+/* DESKTOP*/
+@media (min-width: 1250px) {
+  .container {
+    max-width: 1250px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 1280px;
+    min-height: 377px;
+    background-color: #ffffff;
+  }
+  .footer-navigation {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-social-media {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-icon-box {
+    border: 1px solid #ae1332;
+    border-radius: 10px;
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+  }
+  .footer-phone {
+    padding-bottom: 20px;
+    font-style: none;
   }
 }

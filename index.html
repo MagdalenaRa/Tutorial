@@ -14,19 +14,18 @@
     />
 
     <!-- Section style sheet -->
-
-    <link rel="stylesheet" type="text/css" href="./css/header.css" />
-    <link rel="stylesheet" type="text/css" href="./css/hamburger.css" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./css/order_box.css" />
     <link rel="stylesheet" type="text/css" href="./css/footer.css" />
 
     <!-- Font familiy -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!--<link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -34,36 +33,51 @@
   <!-- Manin website content -->
   <body>
     <footer class="footer">
-      <div class="container footer-container">
-        <picture>
-          <source
-            media="(max-width: 200px)"
-            srcset="
-              ./images/foorer_image_1x.jpg 1x,
-              ./images/foorer_image_1x.jpg 2x
-            "
-          />
-          <img
-            class="product-photo"
-            src="./images/foorer_image_1x.jpg"
-            alt="Woman with banana fruits"
-          />
-        </picture>
-        <div class="footer-logo">
-          <span class="logo">
-            <svg class="logo-icon" width="17" height="16">
-              <use href="./images/icons.svg#icon-vector"></use>
-            </svg>
-          </span>
+      <div class="left-footer">
+        <div class="container footer-container">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/bananamobile1x.png 1x,
+                ./images/bananamobile2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/bananatablet1x.png 1x,
+                ./images/bananatablet2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 1250px)"
+              srcset="
+                ./images/bananadesktop1x.png 1x,
+                ./images/bananadesktop2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/bananadesktop1x.png"
+              alt="Woman with banana fruits"
+            />
+          </picture>
+          <div class="footer-logo">
+            <span class="logo">
+              <svg class="logo-icon" width="17" height="16">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
 
-          <a href="" class="logo-bottom">FRESH HARVEST BOX</a>
+            <a href="" class="logo-bottom">FRESH HARVEST BOX</a>
+          </div>
         </div>
+        <ul class="footer-navigation">
+          <li><a href="" class="link">How It Works</a></li>
+          <li><a href="" class="link">Fruits</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
       </div>
-      <ul class="footer-navigation">
-        <li><a href="" class="link">How It Works</a></li>
-        <li><a href="" class="link">Fruits</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-      </ul>
       <div class="footer-set">
         <ul class="social-media-set">
           <li class="footer-icon-box">
