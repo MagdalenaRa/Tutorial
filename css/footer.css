@@ -160,6 +160,7 @@ img {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    height: 475px;
   }
 
   .footer-phone {
@@ -183,11 +184,6 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: baseline;
-    max-width: 768px;
-  }
-
-  .footer-navigation {
-    padding-top: 80px;
   }
 
   .footer-icon-box {
@@ -195,14 +191,31 @@ img {
     height: 44px;
   }
 
-  .footer-set {
-    display: inline-block;
-    margin-left: 171px;
-    margin-top: 32px;
+  .social-media-set {
+    margin-left: 552px;
+    margin-right: 44px;
+    display: flex;
+    gap: 20px;
+    margin-top: 118px;
+  }
+
+  .footer-address {
+    padding-top: 40px;
+    margin-left: 552px;
+    margin-right: 44px;
+    text-align: center;
+    margin-bottom: 153px;
   }
 
   .left-footer {
-    margin: 0;
+  }
+
+  .footer-link {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .footer-address {
   }
 }
 
@@ -210,26 +223,35 @@ img {
 @media (min-width: 1250px) {
   .container {
     max-width: 1250px;
+    height: 377px;
   }
 
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 32px;
     width: 1280px;
-    min-height: 377px;
+    height: 377px;
     background-color: #ffffff;
   }
+
+  .logo {
+    height: 16px;
+    width: 16px;
+  }
+  .logo-bottom {
+    height: 18px;
+    width: 132px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
   .footer-navigation {
-    display: flex;
-    gap: 20px;
   }
-  .footer-social-media {
-    display: flex;
-    gap: 20px;
-  }
+
   .footer-icon-box {
     border: 1px solid #ae1332;
     border-radius: 10px;
@@ -237,8 +259,52 @@ img {
     width: 44px;
     height: 44px;
   }
+
+  .social-media-set {
+    margin-left: 232px;
+    margin-right: 44px;
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .footer-link {
+    margin-top: 164px;
+    margin-bottom: 195px;
+  }
+
+  .footer-address {
+    padding-top: 40px;
+    margin-left: 232px;
+    margin-right: 44px;
+    text-align: center;
+    margin-bottom: 97px;
+  }
+  .left-footer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
   .footer-phone {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    color: #ae1332;
+    padding-bottom: 40px;
+  }
+  .footer-contact {
     padding-bottom: 20px;
-    font-style: none;
+  }
+  .footer-maps {
+    padding-bottom: 20px;
+  }
+
+  .maps-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #ae1332;
   }
 }
